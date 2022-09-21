@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int,int,int,int);
+int main() {
+    int a, b, c, d;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    int ans = max_of_four(a, b, c, d);
+    cout<<ans<<endl;
+    return 0;
+}
+int max_of_four(int p,int q,int r, int s){
+    int g1= p>q?p:q;
+    int g2 = r>s?r:s;
+    int g = g1>g2?g1:g2;
+    return g;
+}
